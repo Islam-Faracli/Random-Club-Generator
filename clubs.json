@@ -1,15 +1,15 @@
 [
     {
         "club": "AC Milan",
-        "logo": "./pictures/logos/Logo_of_AC_Milan.svg.png"
+        "logo": "./pictures/logos/milan.png"
     },
     {
         "club": "Arsenal FC",
-        "logo": "./pictures/logos//Arsenal_FC.svg.png"
+        "logo": "./pictures/logos/arsenal.png"
     },
     {
         "club": "Atlético de Madrid",
-        "logo": "./pictures/logos/Atletico_Madrid_2017_logo.svg.png"
+        "logo": "./pictures/logos/atletico.png"
     },
     {
         "club": "Borussia Dortmund",
@@ -33,11 +33,11 @@
     },
     {
         "club": "Juventus FC",
-        "logo": "./pictures/logos/Juventus_FC_2017_icon_(black).svg.png"
+        "logo": "./pictures/logos/juventus.png"
     },
     {
         "club": "Liverpool FC",
-        "logo": "./pictures/logos/Liverpool_FC.svg.png"
+        "logo": "./pictures/logos/liverpool.png"
     },
     {
         "club": "Manchester City FC",
@@ -53,11 +53,11 @@
     },
     {
         "club": "Real Madrid CF",
-        "logo": "./pictures/logos/Real_Madrid_CF.svg.png"
+        "logo": "./pictures/logos/real.png"
     },
     {
         "club": "Tottenham Hotspur FC",
-        "logo": "./pictures/logos/Tottenham_Hotspur.png"
+        "logo": "./pictures/logos/tottenham.png"
     },
 
     {
@@ -66,11 +66,11 @@
     },
     {
         "club": "AS Roma",
-        "logo": "./pictures/logos/AS_Roma_logo_(2017).svg.png"
+        "logo": "./pictures/logos/roma.png"
     },
     {
         "club": "Bayer 04 Leverkusen",
-        "logo": "./pictures/logos/Bayer_04_Leverkusen_logo.svg.png"
+        "logo": "./pictures/logos/bayer.png"
     },
     {
         "club": "Beşiktaş JK",
@@ -78,7 +78,7 @@
     },
     {
         "club": "FC Porto",
-        "logo": "./pictures/logos/FC_Porto.svg.png"
+        "logo": "./pictures/logos/porto.png"
     },
     {
         "club": "Fenerbahçe SK",
@@ -86,15 +86,15 @@
     },
     {
         "club": "Galatasaray SK",
-        "logo": "./pictures/logos/Galatasaray_Sports_Club_Logo.svg.png"
+        "logo": "./pictures/logos/cimbom.png"
     },
     {
         "club": "Qarabağ FK",
-        "logo": "./pictures/logos/Qarabağ_FK_loqo.png"
+        "logo": "./pictures/logos/qarabag.png"
     },
     {
         "club": "Olympiacos FC",
-        "logo": "./pictures/logos/Olympiakos_(futbol_takımı).png"
+        "logo": "./pictures/logos/olympiacos.png"
     },
     {
         "club": "Newcastle United FC",
@@ -102,11 +102,11 @@
     },
     {
         "club": "RB Leipzig",
-        "logo": "./pictures/logos/RB_Leipzig_2014_logo.svg.png"
+        "logo": "./pictures/logos/leipzig.png"
     },
     {
         "club": "Sevilla FC",
-        "logo": "./pictures/logos/Sevillafc.png"
+        "logo": "./pictures/logos/sevilla.png"
     },
     {
         "club": "SL Benfica",
@@ -114,51 +114,51 @@
     },
     {
         "club": "Sporting CP",
-        "logo": "./pictures/logos/Sporting_Clube_de_Portugal_(Logo).svg.png"
+        "logo": "./pictures/logos/sporting.png"
     },
     {
         "club": "SSC Napoli",
-        "logo": "./pictures/logos/Sporting_Clube_de_Portugal_(Logo).svg.png"
+        "logo": "./pictures/logos/SSC_Neapel.svg.png"
     },
 
     {
         "club": "Argentina",
-        "logo": "./pictures/logos/Argentina_national_football_team_logo.svg.png"
+        "logo": "./pictures/logos/argentina.png"
     },
     {
         "club": "France",
-        "logo": "./pictures/logos/France_national_football_team_seal.svg.png"
+        "logo": "./pictures/logos/france.png"
     },
     {
         "club": "Brazil",
-        "logo": "./pictures/logos/Brazilian_Football_Confederation_logo.svg.png"
+        "logo": "./pictures/logos/brasil.png"
     },
     {
         "club": "England",
-        "logo": "./pictures/logos/England_national_football_team_crest.svg.png"
+        "logo": "./pictures/logos/england.png"
     },
     {
         "club": "Belgium",
-        "logo": "./pictures/logos/Royal_Belgian_FA_logo_2019.svg.png"
+        "logo": "./pictures/logos/belgium.png"
     },
     {
         "club": "Croatia",
-        "logo": "./pictures/logos/Croatia_national_football_team.png"
+        "logo": "./pictures/logos/croatia.png"
     },
     {
         "club": "Netherlands",
-        "logo": "./pictures/logos/Netherlands_national_football_team_logo.svg.png"
+        "logo": "./pictures/logos/netherlands.png"
     },
     {
         "club": "Italy",
-        "logo": "./pictures/logos/Logo_Italy_National_Football_Team_-_2023.svg.png"
+        "logo": "./pictures/logos/italy.png"
     },
     {
         "club": "Portugal",
-        "logo": "./pictures/logos/Portuguese_Football_Federation.svg.png"
+        "logo": "./pictures/logos/portugal.png"
     },
     {
         "club": "Spain",
-        "logo": "./pictures/logos/Spain_National_Football_Team_badge.png"
+        "logo": "./pictures/logos/spain.png"
     }
 ]
