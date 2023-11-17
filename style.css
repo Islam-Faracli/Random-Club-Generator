@@ -1,0 +1,88 @@
+@font-face {
+    font-family: myfont;
+    src: url(./Overthink.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    background-color: rgb(1, 1, 74);
+}
+header {
+    width: 100%;
+    height: 12vh;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+hr{
+    margin-bottom: 80px;
+}
+header img {
+    width: 85px;
+    height: 85px;
+}
+header p {
+    text-align: center;
+    margin-top: 10px;
+     font-size: 27px;
+     font-family: myfont;
+}
+#clubs-logo-part{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    font-family: myfont;
+    text-align: center;
+    margin-bottom: 30px
+}
+.part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#clubs-logo-part img {
+    margin-top: 50px;
+    width: 140px;
+    height: 140px;
+}
+#middle-part{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#middle-part img {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    width: 50px;
+    height: 50px;
+}
+.club-checks{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.club-checks div{
+    display: flex;
+    gap: 5px;
+}
+#generate{
+    margin-top: 20px;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    background-color: darkblue;
+    border: 2px solid white;
+    outline: 0;
+    border-radius:50%;
+    font-size: 18px;
+    font-family: myfont;
+}
+#generate:hover {
+    background-color: white;
+    color: darkblue;
+}
