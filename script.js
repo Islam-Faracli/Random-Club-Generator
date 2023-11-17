@@ -11,69 +11,69 @@ const ntcehck2 = document.querySelector('#nt2');
 generate.addEventListener('click', getData);
 
 function getData() {
-    let min = 1;
-    let max = 40;
-    let min2 = 1;
-    let max2 = 40;
+    let min = 0;
+    let max = 39;
+    let min2 = 0;
+    let max2 = 30;
 
     if (clcehck1.checked && ntcehck1.checked && elcehck1.checked) {
-        min = 1;
-        max = 40;
+        min = 0;
+        max = 39;
     } else if (elcehck1.checked && clcehck1.checked) {
-        min = 1;
-        max = 30;
+        min = 0;
+        max = 29;
     } else if (ntcehck1.checked && elcehck1.checked) {
-        min = 16;
-        max = 40;
+        min = 15;
+        max = 39;
     } else if (clcehck1.checked && ntcehck1.checked) {
         let r = Math.random() * 2;
-        if (r < 1) {
-            min = 1;
-            max = 15;
+        if (r == 1) {
+            min = 0;
+            max = 14;
         } else {
-            min = 31;
-            max = 40;
+            min = 30;
+            max = 39;
         }
     } else if (clcehck1.checked) {
-        min = 1;
-        max = 15;
+        min = 0;
+        max = 14;
     } else if (elcehck1.checked) {
-        min = 16;
-        max = 30;
+        min = 15;
+        max = 29;
     } else if (ntcehck1.checked) {
-        min = 31;
-        max = 40;
+        min = 30;
+        max = 29;
     } 
 
 
     if (clcehck2.checked && ntcehck2.checked && elcehck2.checked) {
-        min2 = 1;
-        max2 = 40;
+        min2 = 0;
+        max2 = 39;
     } else if (elcehck2.checked && clcehck2.checked) {
-        min2 = 1;
-        max2 = 30;
+        min2 = 0;
+        max2 = 29;
     } else if (ntcehck2.checked && elcehck2.checked) {
-        min2 = 16;
-        max2 = 40;
+        min2 = 15;
+        max2 = 39;
     } else if (clcehck2.checked && ntcehck2.checked) {
         let r = Math.random() * 2;
         if (r < 1) {
-            min2 = 1;
-            max2 = 15;
+            min2 = 0;
+            max2 = 14;
         } else {
-            min2 = 31;
-            max2 = 40;
+            min2 = 30;
+            max2 = 39;
         }
     }
     else if (clcehck2.checked) {
-        min2 = 1;
-        max2 = 15;
+        min2 = 0;
+        max2 = 14;
     } else if (elcehck2.checked) {
-        min2 = 16;
-        max2 = 30;
+        min2 = 15;
+        max2 = 29;
     } else if (ntcehck2.checked) {
-        min2 = 31;
-        max2 = 40;
+        min2 = 30;
+        max2 = 39;
     } 
 
     let rando = Math.floor(Math.random() * (max - min + 1)) + min;
