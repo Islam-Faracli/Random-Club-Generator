@@ -49,6 +49,7 @@ header p {
     margin-top: 50px;
     width: 140px;
     height: 140px;
+    overflow: hidden;
 }
 #middle-part{
     height: 500px;
@@ -85,4 +86,7 @@ header p {
 #generate:hover {
     background-color: white;
     color: darkblue;
+}
+.part>div>p {
+    width: 140px;
 }

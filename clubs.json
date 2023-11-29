@@ -1,164 +1,164 @@
 [
     {
         "club": "AC Milan",
-        "logo": "./pictures/logos/milan.png"
+        "logo": "./pictures/logos/milan1200.png"
     },
     {
         "club": "Arsenal FC",
-        "logo": "./pictures/logos/arsenal.png"
+        "logo": "./pictures/logos/arsenal1200.png"
     },
     {
         "club": "Atlético de Madrid",
-        "logo": "./pictures/logos/atletico.png"
+        "logo": "./pictures/logos/atletico1200.png"
     },
     {
         "club": "Borussia Dortmund",
-        "logo": "./pictures/logos//Borussia_Dortmund.png"
+        "logo": "./pictures/logos//dortmund1200.png"
     },
     {
         "club": "Chelsea FC",
-        "logo": "./pictures/logos/1200px-Chelsea_FC_arma.svg.png"
+        "logo": "./pictures/logos/chelsea1200.png"
     },
     {
         "club": "FC Bayern Munich",
-        "logo": "./pictures/logos/FC_Bayern_München_logo_(2017).svg.png"
+        "logo": "./pictures/logos/bayern1200.png"
     },
     {
         "club": "FC Barcelona",
-        "logo": "./pictures/logos/1200px-FCB.svg.png"
+        "logo": "./pictures/logos/barcelona1200.png"
     },
     {
         "club": "Imter Milan",
-        "logo": "./pictures/logos/FC_Internazionale_Milano_2021.svg.png"
+        "logo": "./pictures/logos/inter1200.png"
     },
     {
         "club": "Juventus FC",
-        "logo": "./pictures/logos/juventus.png"
+        "logo": "./pictures/logos/juventus1200.png"
     },
     {
         "club": "Liverpool FC",
-        "logo": "./pictures/logos/liverpool.png"
+        "logo": "./pictures/logos/liverpool1200.png"
     },
     {
         "club": "Manchester City FC",
-        "logo": "./pictures/logos/Manchester_City_FC_badge.svg.png"
+        "logo": "./pictures/logos/city1200.png"
     },
     {
         "club": "Manchester United FC",
-        "logo": "./pictures/logos/Manchester_United_FC_crest.svg.png"
+        "logo": "./pictures/logos/united1200.png"
     },
     {
         "club": "Paris Saint-Geramin FC",
-        "logo": "./pictures/logos/PSG_logosu.svg.png"
+        "logo": "./pictures/logos/psg1200.png"
     },
     {
         "club": "Real Madrid CF",
-        "logo": "./pictures/logos/real.png"
+        "logo": "./pictures/logos/real1200.png"
     },
     {
         "club": "Tottenham Hotspur FC",
-        "logo": "./pictures/logos/tottenham.png"
+        "logo": "./pictures/logos/tottenham1200.png"
     },
 
     {
         "club": "AFC Ajax",
-        "logo": "./pictures/logos/AFC_Ajax_logo.png"
+        "logo": "./pictures/logos/ajax1200.png"
     },
     {
         "club": "AS Roma",
-        "logo": "./pictures/logos/roma.png"
+        "logo": "./pictures/logos/roma1200.png"
     },
     {
         "club": "Bayer 04 Leverkusen",
-        "logo": "./pictures/logos/bayer.png"
+        "logo": "./pictures/logos/bayer1200.png"
     },
     {
         "club": "Beşiktaş JK",
-        "logo": "./pictures/logos/Logo_of_Beşiktaş_JK.svg.png"
+        "logo": "./pictures/logos/besiktas1200.png"
     },
     {
         "club": "FC Porto",
-        "logo": "./pictures/logos/porto.png"
+        "logo": "./pictures/logos/porto1200.png"
     },
     {
         "club": "Fenerbahçe SK",
-        "logo": "./pictures/logos/Fenerbahçe.svg.png"
+        "logo": "./pictures/logos/fener1200.png"
     },
     {
         "club": "Galatasaray SK",
-        "logo": "./pictures/logos/cimbom.png"
+        "logo": "./pictures/logos/cimbom1200.png"
     },
     {
         "club": "Qarabağ FK",
-        "logo": "./pictures/logos/qarabag.png"
+        "logo": "./pictures/logos/qarabag1200.png"
     },
     {
         "club": "Olympiacos FC",
-        "logo": "./pictures/logos/olympiacos.png"
+        "logo": "./pictures/logos/olympiacos1200.png"
     },
     {
         "club": "Newcastle United FC",
-        "logo": "./pictures/logos/Newcastle_United_Logo.svg.png"
+        "logo": "./pictures/logos/newcastle1200.png"
     },
     {
         "club": "RB Leipzig",
-        "logo": "./pictures/logos/leipzig.png"
+        "logo": "./pictures/logos/leipzig1200.png"
     },
     {
-        "club": "Sevilla FC",
-        "logo": "./pictures/logos/sevilla.png"
+        "club": "Sevilla",
+        "logo": "./pictures/logos/sevilla1200.png"
     },
     {
         "club": "SL Benfica",
-        "logo": "./pictures/logos/SL_Benfica_logo.svg.png"
+        "logo": "./pictures/logos/benfica1200.png"
     },
     {
         "club": "Sporting CP",
-        "logo": "./pictures/logos/sporting.png"
+        "logo": "./pictures/logos/sporting1200.png"
     },
     {
         "club": "SSC Napoli",
-        "logo": "./pictures/logos/SSC_Neapel.svg.png"
+        "logo": "./pictures/logos/napoli1200.png"
     },
 
     {
         "club": "Argentina",
-        "logo": "./pictures/logos/argentina.png"
+        "logo": "./pictures/logos/argentina1200.png"
     },
     {
         "club": "France",
-        "logo": "./pictures/logos/france.png"
+        "logo": "./pictures/logos/france1200.png"
     },
     {
         "club": "Brazil",
-        "logo": "./pictures/logos/brasil.png"
+        "logo": "./pictures/logos/brasil1200.png"
     },
     {
         "club": "England",
-        "logo": "./pictures/logos/england.png"
+        "logo": "./pictures/logos/england1200.png"
     },
     {
         "club": "Belgium",
-        "logo": "./pictures/logos/belgium.png"
+        "logo": "./pictures/logos/belgium1200.png"
     },
     {
         "club": "Croatia",
-        "logo": "./pictures/logos/croatia.png"
+        "logo": "./pictures/logos/croatia1200.png"
     },
     {
         "club": "Netherlands",
-        "logo": "./pictures/logos/netherlands.png"
+        "logo": "./pictures/logos/netherlands1200.png"
     },
     {
         "club": "Italy",
-        "logo": "./pictures/logos/italy.png"
+        "logo": "./pictures/logos/italy1200.png"
     },
     {
         "club": "Portugal",
-        "logo": "./pictures/logos/portugal.png"
+        "logo": "./pictures/logos/portugal1200.png"
     },
     {
         "club": "Spain",
-        "logo": "./pictures/logos/spain.png"
+        "logo": "./pictures/logos/spain1200.png"
     }
 ]

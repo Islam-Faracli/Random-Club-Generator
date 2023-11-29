@@ -27,7 +27,7 @@ function getData() {
         max = 39;
     } else if (clcehck1.checked && ntcehck1.checked) {
         let r = Math.random() * 2;
-        if (r == 1) {
+        if (r < 1) {
             min = 0;
             max = 14;
         } else {
@@ -42,7 +42,7 @@ function getData() {
         max = 29;
     } else if (ntcehck1.checked) {
         min = 30;
-        max = 29;
+        max = 39;
     } 
 
 
