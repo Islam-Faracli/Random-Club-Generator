@@ -82,11 +82,15 @@ header p {
     border-radius:50%;
     font-size: 18px;
     font-family: myfont;
+    cursor: pointer;
 }
 #generate:hover {
     background-color: white;
     color: darkblue;
 }
-.part>div>p {
+.part > div > p {
     width: 140px;
+}
+.secim {
+    cursor: pointer;
 }
