@@ -105,6 +105,8 @@ function getData() {
 
 setTimeout(() => {
 secondclub.style.opacity = 1;
+}, 1500);
+setTimeout(() => {
 firstclub.style.opacity = 1;
-}, 1300);
+}, 1000);
 }
