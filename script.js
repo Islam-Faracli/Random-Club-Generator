@@ -14,8 +14,6 @@ function getData() {
     firstclub.style.opacity = 0;
     secondclub.style.opacity = 0;
 
-setTimeout(() => {
-
     let min = 0;
     let max = 39;
     let min2 = 0;
@@ -104,8 +102,9 @@ setTimeout(() => {
         `;
     });
 }
-}, 1300);
 
+setTimeout(() => {
 secondclub.style.opacity = 1;
 firstclub.style.opacity = 1;
+}, 1300);
 }
