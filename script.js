@@ -11,6 +11,11 @@ const ntcehck2 = document.querySelector('#nt2');
 generate.addEventListener('click', getData);
 
 function getData() {
+    firstclub.style.visibility = 'hidden';
+    secondclub.style.visibility = 'hidden';
+
+setTimeout(() => {
+
     let min = 0;
     let max = 39;
     let min2 = 0;
@@ -44,7 +49,6 @@ function getData() {
         min = 30;
         max = 39;
     } 
-
 
     if (clcehck2.checked && ntcehck2.checked && elcehck2.checked) {
         min2 = 0;
@@ -100,4 +104,8 @@ function getData() {
         `;
     });
 }
+}, 1300);
+
+secondclub.style.visibility = 'visible';
+firstclub.style.visibility = 'visible';
 }
