@@ -11,8 +11,8 @@ const ntcehck2 = document.querySelector('#nt2');
 generate.addEventListener('click', getData);
 
 function getData() {
-    firstclub.style.visibility = 'hidden';
-    secondclub.style.visibility = 'hidden';
+    firstclub.style.opacity = 0;
+    secondclub.style.opacity = 0;
 
 setTimeout(() => {
 
@@ -106,6 +106,6 @@ setTimeout(() => {
 }
 }, 1300);
 
-secondclub.style.visibility = 'visible';
-firstclub.style.visibility = 'visible';
+secondclub.style.opacity = 1;
+firstclub.style.opacity = 1;
 }
