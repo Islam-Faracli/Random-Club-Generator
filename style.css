@@ -77,7 +77,7 @@ header p {
     width: 70px;
     height: 70px;
     background-color: darkblue;
-    border: 2px solid white;
+    border: 0;
     outline: 0;
     border-radius:50%;
     font-size: 18px;
