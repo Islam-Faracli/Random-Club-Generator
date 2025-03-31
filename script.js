@@ -15,19 +15,19 @@ function getData() {
     secondclub.style.opacity = 0;
 
     let min = 0;
-    let max = 44;
+    let max = 39;
     let min2 = 0;
-    let max2 = 44;
+    let max2 = 39;
 
     if (clcehck1.checked && ntcehck1.checked && elcehck1.checked) {
         min = 0;
-        max = 44;
+        max = 39;
     } else if (elcehck1.checked && clcehck1.checked) {
         min = 0;
         max = 29;
     } else if (ntcehck1.checked && elcehck1.checked) {
         min = 15;
-        max = 44;
+        max = 39;
     } else if (clcehck1.checked && ntcehck1.checked) {
         let r = Math.random() * 2;
         if (r < 1) {
@@ -35,7 +35,7 @@ function getData() {
             max = 14;
         } else {
             min = 30;
-            max = 44;
+            max = 39;
         }
     } else if (clcehck1.checked) {
         min = 0;
@@ -45,18 +45,18 @@ function getData() {
         max = 29;
     } else if (ntcehck1.checked) {
         min = 30;
-        max = 44;
+        max = 39;
     } 
 
     if (clcehck2.checked && ntcehck2.checked && elcehck2.checked) {
         min2 = 0;
-        max2 = 44;
+        max2 = 39;
     } else if (elcehck2.checked && clcehck2.checked) {
         min2 = 0;
         max2 = 29;
     } else if (ntcehck2.checked && elcehck2.checked) {
         min2 = 15;
-        max2 = 44;
+        max2 = 39;
     } else if (clcehck2.checked && ntcehck2.checked) {
         let r = Math.random() * 2;
         if (r < 1) {
@@ -64,7 +64,7 @@ function getData() {
             max2 = 14;
         } else {
             min2 = 30;
-            max2 = 44;
+            max2 = 39;
         }
     }
     else if (clcehck2.checked) {
@@ -75,7 +75,7 @@ function getData() {
         max2 = 29;
     } else if (ntcehck2.checked) {
         min2 = 30;
-        max2 = 44;
+        max2 = 39;
     } 
 
     let rando = Math.floor(Math.random() * (max - min + 1)) + min;

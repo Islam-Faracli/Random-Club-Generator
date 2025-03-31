@@ -1,184 +1,168 @@
-[
+[    
     {
-        "club": "Manchester United FC",
-        "logo": "./pictures/logos/united1200.png"
-    },
-    {
-        "club": "Liverpool FC",
-        "logo": "./pictures/logos/liverpool1200.png"
+        "club": "Real Madrid CF",
+        "logo": "./pictures/logos/realmadrid.png"
     },
     {
         "club": "Manchester City FC",
-        "logo": "./pictures/logos/city1200.png"
+        "logo": "./pictures/logos/city.png"
     },
     {
-        "club": "Chelsea FC",
-        "logo": "./pictures/logos/chelsea1200.png"
+        "club": "FC Bayern München",
+        "logo": "./pictures/logos/bavariya.png"
+    },  
+    {
+        "club": "Liverpool FC",
+        "logo": "./pictures/logos/liverpool.png"
+    }, 
+    {
+        "club": "Paris Saint-Germain FC",
+        "logo": "./pictures/logos/psg.png"
     },
     {
-        "club": "Arsenal FC",
-        "logo": "./pictures/logos/arsenal1200.png"
-    },
-    {
-        "club": "Tottenham Hotspur FC",
-        "logo": "./pictures/logos/tottenham1200.png"
-    },
-    {
-        "club": "Real Madrid CF",
-        "logo": "./pictures/logos/real1200.png"
-    },
-    {
-        "club": "FC Barcelona",
-        "logo": "./pictures/logos/barcelona1200.png"
-    },
-    {
-        "club": "Atlético de Madrid",
-        "logo": "./pictures/logos/atletico120.png"
-    },
-    {
-        "club": "FC Bayern Munich",
-        "logo": "./pictures/logos/bayern1200.png"
+        "club": "Inter Milan",
+        "logo": "./pictures/logos/inter.png"
     },
     {
         "club": "Borussia Dortmund",
-        "logo": "./pictures/logos//dortmund1200.png"
-    },
-    {
-        "club": "Juventus FC",
-        "logo": "./pictures/logos/juventus1200.png"
-    },
-    {
-        "club": "AC Milan",
-        "logo": "./pictures/logos/milan1200.png"
-    },
-    {
-        "club": "Imter Milan",
-        "logo": "./pictures/logos/inter1200.png"
-    },
-    {
-        "club": "Paris Saint-Geramin FC",
-        "logo": "./pictures/logos/psg1200.png"
-    },
-    
-    {
-        "club": "Leicester City",
-        "logo": "./pictures/logos/leicester1200.png"
-    },
-    {
-        "club": "West Ham United FC",
-        "logo": "./pictures/logos/westham1200.png"
-    },
-    {
-        "club": "Sevilla",
-        "logo": "./pictures/logos/sevilla1200.png"
-    },
-    {
-        "club": "Valencia CF",
-        "logo": "./pictures/logos/valencia1200.png"
-    },
-    {
-        "club": "RB Leipzig",
-        "logo": "./pictures/logos/leipzig1200.png"
-    },
-    {
-        "club": "Bayer 04 Leverkusen",
-        "logo": "./pictures/logos/bayer1200.png"
-    },
-    {
-        "club": "SSC Napoli",
-        "logo": "./pictures/logos/napoli120.png"
+        "logo": "./pictures/logos/dortmund.png"
     },
     {
         "club": "AS Roma",
-        "logo": "./pictures/logos/roma1200.png"
+        "logo": "./pictures/logos/roma.png"
+    },    
+    {
+        "club": "Chelsea FC",
+        "logo": "./pictures/logos/chelsea.png"
+    },  
+    {
+        "club": "Barcelona",
+        "logo": "./pictures/logos/barca.png"
     },
     {
-        "club": "AFC Ajax",
-        "logo": "./pictures/logos/ajax1200.png"
+        "club": "Borussia Dortmund",
+        "logo": "./pictures/logos/leverkusen.png"
+    },      
+    {
+        "club": "Atlético Madrid",
+        "logo": "./pictures/logos/atletico.png"
+    },      
+    {
+        "club": "Manchester United FC",
+        "logo": "./pictures/logos/united.png"
+    },   
+    {
+        "club": "Arsenal FC",
+        "logo": "./pictures/logos/arsenal.png"
+    },     
+    {
+        "club": "SL Benfica",
+        "logo": "./pictures/logos/benfica.png"
+    },
+    
+    
+
+    {
+        "club": "Atalanta BC",
+        "logo": "./pictures/logos/atalanta.png"
     },
     {
-        "club": "Beşiktaş JK",
-        "logo": "./pictures/logos/besiktas1200.png"
+        "club": "Villarreal CF",
+        "logo": "./pictures/logos/villareal.png"
     },
     {
         "club": "FC Porto",
-        "logo": "./pictures/logos/porto1200.png"
+        "logo": "./pictures/logos/porto.png"
+    },    
+    {
+        "club": "AC Milan",
+        "logo": "./pictures/logos/milan.png"
     },
     {
-        "club": "Fenerbahçe SK",
-        "logo": "./pictures/logos/fener1200.png"
+        "club": "RB Leipzig",
+        "logo": "./pictures/logos/leipzig.png"
+    },    
+    {
+        "club": "Juventus FC",
+        "logo": "./pictures/logos/juventus.png"
+    },    
+    {
+        "club": "SS Lazio",
+        "logo": "./pictures/logos/lazio.png"
+    },        
+    {
+        "club": "Eintracht Frankfurt",
+        "logo": "./pictures/logos/frankfurkt.png"
+    },  
+    {
+        "club": "Club Brugge KV",
+        "logo": "./pictures/logos/brugge.png"
+    },      
+    {
+        "club": "Feyenoord",
+        "logo": "./pictures/logos/feyenord.png"
+    },    
+    {
+        "club": "Rangers FC",
+        "logo": "./pictures/logos/rangers.png"
+    },    
+    {
+        "club": "PSV",
+        "logo": "./pictures/logos/psv.png"
     },
     {
-        "club": "Galatasaray SK",
-        "logo": "./pictures/logos/cimbom1200.png"
+        "club": "West Ham United FC",
+        "logo": "./pictures/logos/westham.png"
     },
     {
-        "club": "Qarabağ FK",
-        "logo": "./pictures/logos/qarabag1200.png"
+        "club": "AFC Ajax",
+        "logo": "./pictures/logos/ajax.png"
     },
     {
-        "club": "SL Benfica",
-        "logo": "./pictures/logos/benfica1200.png"
+        "club": "Lille OSC",
+        "logo": "./pictures/logos/lille.png"
     },
 
+
+    
     {
         "club": "Argentina",
-        "logo": "./pictures/logos/argentina1200.png"
+        "logo": "./pictures/logos/argentina.png"
     },
     {
         "club": "France",
-        "logo": "./pictures/logos/france1200.png"
+        "logo": "./pictures/logos/france.png"
     },
     {
         "club": "Spain",
-        "logo": "./pictures/logos/spain1200.png"
+        "logo": "./pictures/logos/spain.png"
     },
     {
         "club": "England",
-        "logo": "./pictures/logos/england1200.png"
+        "logo": "./pictures/logos/england.png"
     },
     {
         "club": "Brazil",
-        "logo": "./pictures/logos/brasil1200.png"
-    },
-    {
-        "club": "Belgium",
-        "logo": "./pictures/logos/belgium1200.png"
-    },
-    {
-        "club": "Netherlands",
-        "logo": "./pictures/logos/netherlands1200.png"
+        "logo": "./pictures/logos/brazil.png"
     },
     {
         "club": "Portugal",
-        "logo": "./pictures/logos/portugal1200.png"
+        "logo": "./pictures/logos/portugal.png"
     },
     {
-        "club": "Columbia",
-        "logo": "./pictures/logos/columbia1200.png"
+        "club": "Netherlands",
+        "logo": "./pictures/logos/netherlands.png"
+    },
+    {
+        "club": "Belgium",
+        "logo": "./pictures/logos/belgium.png"
     },
     {
         "club": "Italy",
-        "logo": "./pictures/logos/italy1200.png"
-    },
-    {
-        "club": "Uruguay",
-        "logo": "./pictures/logos/uruguay1200.png"
-    },
-    {
-        "club": "Croatia",
-        "logo": "./pictures/logos/croatia1200.png"
+        "logo": "./pictures/logos/italy.png"
     },
     {
         "club": "Germany",
-        "logo": "./pictures/logos/germany1200.png"
-    },
-    {
-        "club": "Switzerland",
-        "logo": "./pictures/logos/switzerland1200.png"
-    },
-    {
-        "club": "Turkiye",
-        "logo": "./pictures/logos/turkey1200.png"
+        "logo": "./pictures/logos/germany.png"
     }
 ]
