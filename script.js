@@ -1,7 +1,6 @@
 const generate = document.querySelector('#generate');
 const firstclub = document.querySelector('#first');
 const secondclub = document.querySelector('#second');
-const messageBox = document.querySelector('#message');
 
 const firstOptions = {
     a: document.querySelector('#cl1'),
@@ -80,13 +79,6 @@ async function loadClubs() {
     return clubsCache;
 }
 
-function setMessage(text, isWarning = false) {
-    if (!messageBox) return;
-    messageBox.textContent = text || '';
-    messageBox.classList.toggle('warning', isWarning);
-    messageBox.classList.toggle('info', !isWarning && Boolean(text));
-}
-
 async function getData() {
     firstclub.style.opacity = 0;
     secondclub.style.opacity = 0;
@@ -102,15 +94,6 @@ async function getData() {
 
         lastFirstClub = firstIndex;
         lastSecondClub = secondIndex;
-
-        if (firstIndex === secondIndex) {
-            setMessage(
-                'Only one club matches the selected filters, so both sides show the same club.',
-                true
-            );
-        } else {
-            setMessage('Generated two different clubs.', false);
-        }
 
         firstclub.innerHTML = `
             <img src="${clubs[firstIndex].logo}" alt="${clubs[firstIndex].club}">
