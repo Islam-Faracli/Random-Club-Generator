@@ -58,16 +58,32 @@ function clampIndex(i, dataLength) {
     return Math.max(0, Math.min(i, dataLength - 1));
 }
 
-function pickNotSameAsLast(range, lastClubIndex) {
-    let index = randomInt(range.min, range.max);
-    let attempts = 0;
+const messageBox = document.querySelector('#message');
 
-    while (index === lastClubIndex && attempts < 100) {
-        index = randomInt(range.min, range.max);
-        attempts++;
+function setMessage(text, isWarning = false) {
+    if (!messageBox) return;
+    messageBox.textContent = text || '';
+    messageBox.classList.toggle('warning', isWarning);
+    messageBox.classList.toggle('info', !isWarning && Boolean(text));
+}
+
+function getRandomIndex(range, excludedIndexes = []) {
+    const excluded = new Set(
+        excludedIndexes.filter(
+            (i) => Number.isInteger(i) && i >= range.min && i <= range.max
+        )
+    );
+
+    const candidates = [];
+    for (let i = range.min; i <= range.max; i += 1) {
+        if (!excluded.has(i)) candidates.push(i);
     }
 
-    return index;
+    if (candidates.length === 0) {
+        return randomInt(range.min, range.max);
+    }
+
+    return candidates[randomInt(0, candidates.length - 1)];
 }
 
 async function getData() {
@@ -90,14 +106,23 @@ async function getData() {
 
         const data = await loadClubs();
 
-        let firstIndex = pickNotSameAsLast(range1, lastFirstClub);
-        let secondIndex = pickNotSameAsLast(range2, lastSecondClub);
+        let firstIndex = getRandomIndex(range1, [lastFirstClub]);
+        let secondIndex = getRandomIndex(range2, [lastSecondClub, firstIndex]);
 
         firstIndex = clampIndex(firstIndex, data.length);
         secondIndex = clampIndex(secondIndex, data.length);
 
         lastFirstClub = firstIndex;
         lastSecondClub = secondIndex;
+
+        if (firstIndex === secondIndex) {
+            setMessage(
+                'Only one club matches the selected filters, so both sides show the same club.',
+                true
+            );
+        } else {
+            setMessage('Generated two different clubs.', false);
+        }
 
         firstclub.innerHTML = `
             <img src="${data[firstIndex].logo}" alt="${data[firstIndex].club}">
