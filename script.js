@@ -1,17 +1,32 @@
 const generate = document.querySelector('#generate');
-const secondclub = document.querySelector('#second');
 const firstclub = document.querySelector('#first');
+const secondclub = document.querySelector('#second');
+const messageBox = document.querySelector('#message');
 
-const clcehck1 = document.querySelector('#cl1');
-const elcehck1 = document.querySelector('#el1');
-const ntcehck1 = document.querySelector('#nt1');
+const firstOptions = {
+    a: document.querySelector('#cl1'),
+    b: document.querySelector('#el1'),
+    c: document.querySelector('#cc1'),
+    n: document.querySelector('#nt1'),
+};
 
-const clcehck2 = document.querySelector('#cl2');
-const elcehck2 = document.querySelector('#el2');
-const ntcehck2 = document.querySelector('#nt2');
+const secondOptions = {
+    a: document.querySelector('#cl2'),
+    b: document.querySelector('#el2'),
+    c: document.querySelector('#cc2'),
+    n: document.querySelector('#nt2'),
+};
+
+const CLASS_RANGES = {
+    a: { min: 0, max: 9 },
+    b: { min: 10, max: 19 },
+    c: { min: 20, max: 29 },
+    n: { min: 30, max: 39 },
+};
+
+const ALL_RANGES = [{ min: 0, max: 39 }];
 
 let clubsCache = null;
-
 let lastFirstClub = null;
 let lastSecondClub = null;
 
@@ -21,24 +36,35 @@ function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function getRange(cl, el, nt) {
-    if (!(cl || el || nt)) return { min: 0, max: 39 };
+function getSelectedRanges(options) {
+    const ranges = Object.entries(options)
+        .filter(([, input]) => input && input.checked)
+        .map(([key]) => CLASS_RANGES[key]);
 
-    if (cl && el && nt) return { min: 0, max: 39 };
-    if (cl && el) return { min: 0, max: 29 };
-    if (el && nt) return { min: 15, max: 39 };
+    return ranges.length ? ranges : ALL_RANGES;
+}
 
-    if (cl && nt) {
-        return Math.random() < 0.5
-            ? { min: 0, max: 14 }
-            : { min: 30, max: 39 };
+function buildCandidates(ranges, excludedIndexes = []) {
+    const excluded = new Set(excludedIndexes.filter(Number.isInteger));
+    const candidates = [];
+
+    ranges.forEach(({ min, max }) => {
+        for (let i = min; i <= max; i += 1) {
+            if (!excluded.has(i)) candidates.push(i);
+        }
+    });
+
+    return candidates;
+}
+
+function pickRandomIndex(ranges, excludedIndexes = []) {
+    const candidates = buildCandidates(ranges, excludedIndexes);
+    if (candidates.length) {
+        return candidates[randomInt(0, candidates.length - 1)];
     }
 
-    if (cl) return { min: 0, max: 14 };
-    if (el) return { min: 15, max: 29 };
-    if (nt) return { min: 30, max: 39 };
-
-    return { min: 0, max: 39 };
+    const fallback = buildCandidates(ranges);
+    return fallback.length ? fallback[randomInt(0, fallback.length - 1)] : 0;
 }
 
 async function loadClubs() {
@@ -54,36 +80,11 @@ async function loadClubs() {
     return clubsCache;
 }
 
-function clampIndex(i, dataLength) {
-    return Math.max(0, Math.min(i, dataLength - 1));
-}
-
-const messageBox = document.querySelector('#message');
-
 function setMessage(text, isWarning = false) {
     if (!messageBox) return;
     messageBox.textContent = text || '';
     messageBox.classList.toggle('warning', isWarning);
     messageBox.classList.toggle('info', !isWarning && Boolean(text));
-}
-
-function getRandomIndex(range, excludedIndexes = []) {
-    const excluded = new Set(
-        excludedIndexes.filter(
-            (i) => Number.isInteger(i) && i >= range.min && i <= range.max
-        )
-    );
-
-    const candidates = [];
-    for (let i = range.min; i <= range.max; i += 1) {
-        if (!excluded.has(i)) candidates.push(i);
-    }
-
-    if (candidates.length === 0) {
-        return randomInt(range.min, range.max);
-    }
-
-    return candidates[randomInt(0, candidates.length - 1)];
 }
 
 async function getData() {
@@ -92,25 +93,12 @@ async function getData() {
     generate.disabled = true;
 
     try {
-        const range1 = getRange(
-            clcehck1.checked,
-            elcehck1.checked,
-            ntcehck1.checked
-        );
+        const ranges1 = getSelectedRanges(firstOptions);
+        const ranges2 = getSelectedRanges(secondOptions);
+        const clubs = await loadClubs();
 
-        const range2 = getRange(
-            clcehck2.checked,
-            elcehck2.checked,
-            ntcehck2.checked
-        );
-
-        const data = await loadClubs();
-
-        let firstIndex = getRandomIndex(range1, [lastFirstClub]);
-        let secondIndex = getRandomIndex(range2, [lastSecondClub, firstIndex]);
-
-        firstIndex = clampIndex(firstIndex, data.length);
-        secondIndex = clampIndex(secondIndex, data.length);
+        const firstIndex = pickRandomIndex(ranges1, [lastFirstClub]);
+        const secondIndex = pickRandomIndex(ranges2, [lastSecondClub, firstIndex]);
 
         lastFirstClub = firstIndex;
         lastSecondClub = secondIndex;
@@ -125,16 +113,16 @@ async function getData() {
         }
 
         firstclub.innerHTML = `
-            <img src="${data[firstIndex].logo}" alt="${data[firstIndex].club}">
-            <p>${data[firstIndex].club}</p>
+            <img src="${clubs[firstIndex].logo}" alt="${clubs[firstIndex].club}">
+            <p>${clubs[firstIndex].club}</p>
         `;
 
         secondclub.innerHTML = `
-            <img src="${data[secondIndex].logo}" alt="${data[secondIndex].club}">
-            <p>${data[secondIndex].club}</p>
+            <img src="${clubs[secondIndex].logo}" alt="${clubs[secondIndex].club}">
+            <p>${clubs[secondIndex].club}</p>
         `;
-    } catch (err) {
-        console.error(err);
+    } catch (error) {
+        console.error(error);
     } finally {
         setTimeout(() => {
             firstclub.style.opacity = 1;

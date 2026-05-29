@@ -39,6 +39,10 @@
     "club": "Juventus",
     "logo": "./pictures/logos/juventus.png"
   },
+
+
+
+
   {
     "club": "B. Dortmund",
     "logo": "./pictures/logos/dortmund.png"
@@ -59,10 +63,6 @@
     "club": "Tottenham",
     "logo": "./pictures/logos/tottenham.png"
   },
-
-
-
-
   {
     "club": "Porto",
     "logo": "./pictures/logos/porto.png"
@@ -83,6 +83,10 @@
     "club": "Ajax",
     "logo": "./pictures/logos/ajax.png"
   },
+
+
+
+
   {
     "club": "Napoli",
     "logo": "./pictures/logos/napoli.png"
