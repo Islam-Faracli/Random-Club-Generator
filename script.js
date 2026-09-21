@@ -17,13 +17,13 @@ const secondOptions = {
 };
 
 const CLASS_RANGES = {
-    a: { min: 0, max: 9 },
-    b: { min: 10, max: 19 },
-    c: { min: 20, max: 29 },
-    n: { min: 30, max: 39 },
+    a: { min: 0, max: 12 },
+    b: { min: 13, max: 26 },
+    c: { min: 27, max: 40 },
+    n: { min: 41, max: 50 },
 };
 
-const ALL_RANGES = [{ min: 0, max: 39 }];
+const ALL_RANGES = [{ min: 0, max: 50 }];
 
 let clubsCache = null;
 let lastFirstClub = null;
