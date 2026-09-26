@@ -1,0 +1,182 @@
+[
+  {
+    "club": "Real Madrid",
+    "logo": "./pictures/logos/realmadrid.png"
+  },
+  {
+    "club": "Arsenal",
+    "logo": "./pictures/logos/arsenal.png"
+  },
+  {
+    "club": "Man City",
+    "logo": "./pictures/logos/city.png"
+  },
+  {
+    "club": "Paris",
+    "logo": "./pictures/logos/psg.png"
+  },
+  {
+    "club": "Bayern München",
+    "logo": "./pictures/logos/bavariya.png"
+  },
+  {
+    "club": "Barcelona",
+    "logo": "./pictures/logos/barca.png"
+  },
+  {
+    "club": "Atleti",
+    "logo": "./pictures/logos/atletico.png"
+  },
+  {
+    "club": "Liverpool",
+    "logo": "./pictures/logos/liverpool.png"
+  },
+
+
+
+
+  {
+    "club": "Chelsea",
+    "logo": "./pictures/logos/chelsea.png"
+  },
+  {
+    "club": "Inter",
+    "logo": "./pictures/logos/inter.png"
+  },
+  {
+    "club": "Newcastle",
+    "logo": "./pictures/logos/newcastle.png"
+  },
+  {
+    "club": "Tottenham",
+    "logo": "./pictures/logos/tottenham.png"
+  },
+  {
+    "club": "Aston Villa",
+    "logo": "./pictures/logos/astonvilla.png"
+  },
+  {
+    "club": "Man Utd",
+    "logo": "./pictures/logos/united.png"
+  },
+  {
+    "club": "Nott'm Forest",
+    "logo": "./pictures/logos/forest.png"
+  },
+  {
+    "club": "Milan",
+    "logo": "./pictures/logos/milan.png"
+  },
+  {
+    "club": "Atalanta",
+    "logo": "./pictures/logos/atalanta.png"
+  },
+  {
+    "club": "Napoli",
+    "logo": "./pictures/logos/napoli.png"
+  },
+  {
+    "club": "Juventus",
+    "logo": "./pictures/logos/juventus.png"
+  },
+  {
+    "club": "Leverkusen",
+    "logo": "./pictures/logos/leverkusen.png"
+  },
+
+
+
+
+  {
+    "club": "Bournemouth",
+    "logo": "./pictures/logos/bournemouth.png"
+  },
+  {
+    "club": "Brentford",
+    "logo": "./pictures/logos/brentford.png"
+  },
+  {
+    "club": "Brighton",
+    "logo": "./pictures/logos/brighton.png"
+  },
+  {
+    "club": "Crystal Palace",
+    "logo": "./pictures/logos/crystalpalace.png"
+  },
+  {
+    "club": "Fullham",
+    "logo": "./pictures/logos/fullham.png"
+  },
+  {
+    "club": "Monaco",
+    "logo": "./pictures/logos/monaco.png"
+  },
+    {
+    "club": "Marseille",
+    "logo": "./pictures/logos/marseille.png"
+  },
+  {
+    "club": "Roma",
+    "logo": "./pictures/logos/roma.png"
+  },
+  {
+    "club": "Athletic Club",
+    "logo": "./pictures/logos/athleticbilbao.png"
+  },
+  {
+    "club": "Fenerbahçe",
+    "logo": "./pictures/logos/fenerbahce.png"
+  },
+  {
+    "club": "Galatasaray",
+    "logo": "./pictures/logos/galatasaray.png"
+  },
+  {
+    "club": "B. Dortmund",
+    "logo": "./pictures/logos/dortmund.png"
+  },
+
+
+
+
+  {
+    "club": "France",
+    "logo": "./pictures/logos/france.png"
+  },
+  {
+    "club": "Spain",
+    "logo": "./pictures/logos/untitled.png"
+  },
+  {
+    "club": "England",
+    "logo": "./pictures/logos/england.png"
+  },
+  {
+    "club": "Portugal",
+    "logo": "./pictures/logos/portugal.png"
+  },
+  {
+    "club": "Germany",
+    "logo": "./pictures/logos/germany.png"
+  },
+  {
+    "club": "Brazil",
+    "logo": "./pictures/logos/brazil.png"
+  },
+  {
+    "club": "Argentina",
+    "logo": "./pictures/logos/argentina.png"
+  },
+  {
+    "club": "Netherlands",
+    "logo": "./pictures/logos/netherlands.png"
+  },
+  {
+    "club": "Italy",
+    "logo": "./pictures/logos/italy.png"
+  },
+  {
+    "club": "Belgium",
+    "logo": "./pictures/logos/belgium.png"
+  }
+]
