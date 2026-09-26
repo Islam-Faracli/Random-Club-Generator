@@ -1,0 +1,186 @@
+[
+  {
+    "club": "Bayern München",
+    "logo": "./pictures/logos/bavariya.png"
+  },
+  {
+    "club": "Paris",
+    "logo": "./pictures/logos/psg.png"
+  },
+  {
+    "club": "Man City",
+    "logo": "./pictures/logos/city.png"
+  },
+  {
+    "club": "Real Madrid",
+    "logo": "./pictures/logos/realmadrid.png"
+  },
+  {
+    "club": "Barcelona",
+    "logo": "./pictures/logos/barca.png"
+  },
+  {
+    "club": "Arsenal",
+    "logo": "./pictures/logos/arsenal.png"
+  },
+  {
+    "club": "Liverpool",
+    "logo": "./pictures/logos/liverpool.png"
+  },
+  {
+    "club": "Atleti",
+    "logo": "./pictures/logos/atletico.png"
+  },
+  {
+    "club": "Inter",
+    "logo": "./pictures/logos/inter.png"
+  },
+  {
+    "club": "Man Utd",
+    "logo": "./pictures/logos/united.png"
+  },
+  {
+    "club": "B. Dortmund",
+    "logo": "./pictures/logos/dortmund.png"
+  },
+
+
+
+
+  {
+    "club": "Galatasaray",
+    "logo": "./pictures/logos/galatasaray.png"
+  },
+  {
+    "club": "Roma",
+    "logo": "./pictures/logos/roma.png"
+  },
+  {
+    "club": "Chelsea",
+    "logo": "./pictures/logos/chelsea.png"
+  },
+  {
+    "club": "Tottenham",
+    "logo": "./pictures/logos/tottenham.png"
+  },
+  {
+    "club": "Napoli",
+    "logo": "./pictures/logos/napoli.png"
+  },
+  {
+    "club": "Leverkusen",
+    "logo": "./pictures/logos/leverkusen.png"
+  },
+  {
+    "club": "Milan",
+    "logo": "./pictures/logos/milan.png"
+  },
+  {
+    "club": "Newcastle",
+    "logo": "./pictures/logos/newcastle.png"
+  },
+  {
+    "club": "Fenerbahçe",
+    "logo": "./pictures/logos/fenerbahce.png"
+  },
+  {
+    "club": "Villareal",
+    "logo": "./pictures/logos/villareal.png"
+  },
+  {
+    "club": "Real Betis",
+    "logo": "./pictures/logos/betis.png"
+  },
+  {
+    "club": "Athletic Club",
+    "logo": "./pictures/logos/athleticbilbao.png"
+  },
+
+
+
+
+  {
+    "club": "Real Sociedad",
+    "logo": "./pictures/logos/realsociedad.png"
+  },
+  {
+    "club": "Benfica",
+    "logo": "./pictures/logos/benfica.png"
+  },
+  {
+    "club": "Brentford",
+    "logo": "./pictures/logos/brentford.png"
+  },
+  {
+    "club": "Crystal Palace",
+    "logo": "./pictures/logos/crystalpalace.png"
+  },
+  {
+    "club": "Aston Villa",
+    "logo": "./pictures/logos/astonvilla.png"
+  },
+  {
+    "club": "Nott'm Forest",
+    "logo": "./pictures/logos/forest.png"
+  },
+  {
+    "club": "Juventus",
+    "logo": "./pictures/logos/juventus.png"
+  },
+  {
+    "club": "Leipzig",
+    "logo": "./pictures/logos/leipzig.png"
+  },
+  {
+    "club": "Al Nassr",
+    "logo": "./pictures/logos/alnassr.png"
+  },
+  {
+    "club": "Sunderland",
+    "logo": "./pictures/logos/sunderland.png"
+  },
+
+
+
+
+  {
+    "club": "France",
+    "logo": "./pictures/logos/france.png"
+  },
+  {
+    "club": "Spain",
+    "logo": "./pictures/logos/untitled.png"
+  },
+  {
+    "club": "England",
+    "logo": "./pictures/logos/england.png"
+  },
+  {
+    "club": "Portugal",
+    "logo": "./pictures/logos/portugal.png"
+  },
+  {
+    "club": "Germany",
+    "logo": "./pictures/logos/germany.png"
+  },
+  {
+    "club": "Brazil",
+    "logo": "./pictures/logos/brazil.png"
+  },
+  {
+    "club": "Argentina",
+    "logo": "./pictures/logos/argentina.png"
+  },
+  {
+    "club": "Netherlands",
+    "logo": "./pictures/logos/netherlands.png"
+  },
+  {
+    "club": "Italy",
+    "logo": "./pictures/logos/italy.png"
+  },
+  {
+    "club": "Belgium",
+    "logo": "./pictures/logos/belgium.png"
+  }
+]

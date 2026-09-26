@@ -1,6 +1,8 @@
 const generate = document.querySelector('#generate');
 const firstclub = document.querySelector('#first');
 const secondclub = document.querySelector('#second');
+const gameSelect = document.querySelector('#game-select');
+const errorMessage = document.querySelector('#error-message');
 
 const firstOptions = {
     a: document.querySelector('#cl1'),
@@ -16,31 +18,53 @@ const secondOptions = {
     n: document.querySelector('#nt2'),
 };
 
-const CLASS_RANGES = {
-    a: { min: 0, max: 12 },
-    b: { min: 13, max: 26 },
-    c: { min: 27, max: 40 },
-    n: { min: 41, max: 50 },
+const GAMES = {
+    pes21: {
+        file: './pes21.json',
+        classSizes: { a: 13, b: 14, c: 14, n: 10 },
+    },
+    efootball: {
+        file: './efootball.json',
+        classSizes: { a: 8, b: 12, c: 12, n: 10 },
+    },
+    fc27: {
+        file: './fc27.json',
+        classSizes: { a: 11, b: 12, c: 10, n: 10 },
+    },
 };
 
-const ALL_RANGES = [{ min: 0, max: 50 }];
-
-let clubsCache = null;
+const clubsCache = new Map();
 let lastFirstClub = null;
 let lastSecondClub = null;
 
 generate.addEventListener('click', getData);
+gameSelect.addEventListener('change', () => {
+    lastFirstClub = null;
+    lastSecondClub = null;
+    errorMessage.textContent = '';
+});
 
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function getSelectedRanges(options) {
+function getClassRanges(game) {
+    let min = 0;
+    return Object.fromEntries(
+        Object.entries(game.classSizes).map(([key, size]) => {
+            const range = { min, max: min + size - 1 };
+            min += size;
+            return [key, range];
+        }),
+    );
+}
+
+function getSelectedRanges(options, classRanges, clubCount) {
     const ranges = Object.entries(options)
         .filter(([, input]) => input && input.checked)
-        .map(([key]) => CLASS_RANGES[key]);
+        .map(([key]) => classRanges[key]);
 
-    return ranges.length ? ranges : ALL_RANGES;
+    return ranges.length ? ranges : [{ min: 0, max: clubCount - 1 }];
 }
 
 function buildCandidates(ranges, excludedIndexes = []) {
@@ -66,28 +90,47 @@ function pickRandomIndex(ranges, excludedIndexes = []) {
     return fallback.length ? fallback[randomInt(0, fallback.length - 1)] : 0;
 }
 
-async function loadClubs() {
-    if (clubsCache) return clubsCache;
+async function loadClubs(game) {
+    if (clubsCache.has(game.file)) return clubsCache.get(game.file);
 
-    const resp = await fetch('/pes21.json');
+    const resp = await fetch(game.file);
 
     if (!resp.ok) {
-        throw new Error('Failed to load pes21.json');
+        throw new Error(`Failed to load ${game.file}: ${resp.status}`);
     }
 
-    clubsCache = await resp.json();
-    return clubsCache;
+    const clubs = await resp.json();
+    const expectedClubCount = Object.values(game.classSizes).reduce(
+        (total, size) => total + size,
+        0,
+    );
+
+    const actualClubCount = Array.isArray(clubs) ? clubs.length : 'invalid data';
+    if (!Array.isArray(clubs) || clubs.length !== expectedClubCount) {
+        throw new Error(
+            `${game.file} contains ${actualClubCount} clubs; expected ${expectedClubCount} based on its class groups.`,
+        );
+    }
+
+    clubsCache.set(game.file, clubs);
+    return clubs;
 }
 
 async function getData() {
     firstclub.style.opacity = 0;
     secondclub.style.opacity = 0;
     generate.disabled = true;
+    gameSelect.disabled = true;
+    errorMessage.textContent = '';
 
     try {
-        const ranges1 = getSelectedRanges(firstOptions);
-        const ranges2 = getSelectedRanges(secondOptions);
-        const clubs = await loadClubs();
+        const game = GAMES[gameSelect.value];
+        if (!game) throw new Error(`Unknown game selected: ${gameSelect.value}`);
+
+        const clubs = await loadClubs(game);
+        const classRanges = getClassRanges(game);
+        const ranges1 = getSelectedRanges(firstOptions, classRanges, clubs.length);
+        const ranges2 = getSelectedRanges(secondOptions, classRanges, clubs.length);
 
         const firstIndex = pickRandomIndex(ranges1, [lastFirstClub]);
         const secondIndex = pickRandomIndex(ranges2, [lastSecondClub, firstIndex]);
@@ -106,6 +149,8 @@ async function getData() {
         `;
     } catch (error) {
         console.error(error);
+        errorMessage.textContent =
+            error instanceof Error ? error.message : 'Failed to generate clubs.';
     } finally {
         setTimeout(() => {
             firstclub.style.opacity = 1;
@@ -114,6 +159,7 @@ async function getData() {
         setTimeout(() => {
             secondclub.style.opacity = 1;
             generate.disabled = false;
+            gameSelect.disabled = false;
         }, 2000);
     }
 }
