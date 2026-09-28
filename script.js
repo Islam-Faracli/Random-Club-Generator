@@ -25,7 +25,7 @@ const GAMES = {
     },
     efootball: {
         file: './efootball.json',
-        classSizes: { a: 8, b: 12, c: 12, n: 10 },
+        classSizes: { a: 7, b: 12, c: 12, n: 10 },
     },
     fc27: {
         file: './fc27.json',
